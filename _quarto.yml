@@ -6,6 +6,9 @@ book:
   title: "mybook"
   author: "Jane Doe"
   date: "26/05/2022"
+  site-url: https://ccamara.github.io/quarto-book-test/
+  repo-url: https://github.com/ccamara/quarto-book-test
+  repo-actions: [edit, issue]
   chapters:
     - index.qmd
     - intro.qmd
