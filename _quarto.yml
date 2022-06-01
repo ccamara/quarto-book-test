@@ -9,7 +9,10 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - python/intro.qmd
+    - part: R/intro.qmd
+      chapters:
+      - summary.qmd
     - references.qmd
 
 bibliography: references.bib

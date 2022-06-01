@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "mybook",
     "section": "",
-    "text": "This is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n{{< include README.md >}}"
+    "text": "This is an example of text: R (?sec-rlang) ?sec-rlang and Python (Chapter 2) Chapter Chapter 2 Chapter Chapter 2 units."
   },
   {
     "objectID": "intro.html",
@@ -14,9 +14,72 @@
     "text": "See Knuth (1984) for additional discussion of literate programming.\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
   },
   {
+    "objectID": "python/intro.html",
+    "href": "python/intro.html",
+    "title": "2  Python",
+    "section": "",
+    "text": "Some text here"
+  },
+  {
+    "objectID": "python/intro.html#data-types",
+    "href": "python/intro.html#data-types",
+    "title": "2  Python",
+    "section": "2.2 Data Types",
+    "text": "2.2 Data Types\nPython is a dynamically typed language. Unlike languages like Java or C++, Python does not require the type declaration or for a variable to be declared in advance. We can declare a variable with some data and Python will infer the type when it uses it.\nIn statically typed language, a variable needs to be declared before it is used. In Java, we would type:\nint anInt;\nanInt = 5;\nanInt will then be an integer when it is compiled and run.\nIn Python, we could declare a variable and then assign a different type of data later to it.\n\nan_int = 5\nprint(an_int)\nan_int = \"Oh dear\"\nan_int\n\n5\n\n\n'Oh dear'\n\n\nAs you may come to find, some Python operations expect data in a certain format. It is good to understand the typing and to be careful when declaring variables that you are not changing an existing variable.\nPython does have some core data types:\n\n2.2.1 String\nA string of alphanumeric characters (AKA, a text).\n\"Hello Warwick\"\n\n\n2.2.2 Integer\nA whole number, like 1,2,3\n1\n\n\n2.2.3 Float\nA number with a decimal place, like 1.0, 2.0, 3.0\n1.0\n\n\n2.2.4 Collections\nThese basic types can be put together into collections.\nA list is a collection of items. These can be of any type, including lists and dictionaries.\n\na_list = [1,2,\"a\"]\n\nIf we know where some data is, we can access it directly, which we call slicing.\nLike variables, you can reassign data in a list.\n\na_list[2]\nprint(a_list[2])\na_list[2] = \"b\"\na_list\n\na\n\n\n[1, 2, 'b']\n\n\nHowever you need to be careful with this and to know the length of the list.\n\na_list[3]\n\nIndexError: list index out of range\n\n\nYou should get an error saying that list “list index out of range”. This is because Python starts counts from 0, not 1.\nWe can find the size of the list, if we do not already know it, using:\n\nlen(a_list)\n\n3\n\n\nHow might you find the last element in a list using this?\n\n2.2.4.1 Tuples and sets\nTuples are like lists and operate in much the same way. However, they are immutable. Once the elements are created, they cannot be changed.\nSets operate in the same way as lists but can only contain one of each value that you want to use. A list can be [1,1,2,3] where a set would be [1,2,3].\n\n\n\n2.2.5 Dictionaries\nDictionary, like lists, are collections. Unlike lists, they collect pairs of key : values. The key is a name of something and the associated value. Like lists, dictionaries are reassignable.\n\na_dict = {\"name\": \"Tom\", \"surname\":\"Thumb\", \"place\":\"London\"}\nprint(a_dict)\na_dict[\"surname\"] = \"Thumbelina\"\na_dict\n\n{'name': 'Tom', 'surname': 'Thumb', 'place': 'London'}\n\n\n{'name': 'Tom', 'surname': 'Thumbelina', 'place': 'London'}\n\n\nUnderstanding dictionaries will help if you process any data formatted in JSON.\nPython has a collections library that can be used for different containers."
+  },
+  {
+    "objectID": "python/intro.html#summary",
+    "href": "python/intro.html#summary",
+    "title": "2  Python",
+    "section": "2.3 Summary",
+    "text": "2.3 Summary\nIn this section, we introduce the Python language and the core data types. The concept of types and how Python sees them is discussed."
+  },
+  {
+    "objectID": "python/intro.html#further-reading",
+    "href": "python/intro.html#further-reading",
+    "title": "2  Python",
+    "section": "2.4 Further Reading",
+    "text": "2.4 Further Reading\nLutz, M. 2013. Learning Python (5 ed). O’Reilly Media, Sebastopol\nDriscoll, M. 2014. Python 101\nSweigart, A. 2019. Automate the Boring Stuff (2 ed), No Starch Press, San Francisco\nPython Style Guide\nStatic vs Dynamic Typing"
+  },
+  {
+    "objectID": "R/intro.html",
+    "href": "R/intro.html",
+    "title": "Introduction to R",
+    "section": "",
+    "text": "This unit will provide a basic understanding of the R language and will cover data handling and visualisation."
+  },
+  {
+    "objectID": "R/intro.html#why-r",
+    "href": "R/intro.html#why-r",
+    "title": "Introduction to R",
+    "section": "Why R?",
+    "text": "Why R?\nR is a free and widely used statistical programming language. Employees of companies such as Google and Microsoft use R to process, analyse and visualise data. Work in R is supported by code written by leading academics in mathematics, statistics and many other areas. If you work in data analysis in your future career then knowing how to use R will be a very useful skill."
+  },
+  {
+    "objectID": "R/intro.html#where-is-r-used",
+    "href": "R/intro.html#where-is-r-used",
+    "title": "Introduction to R",
+    "section": "Where is R used?",
+    "text": "Where is R used?"
+  },
+  {
+    "objectID": "R/intro.html#learning-outcomes",
+    "href": "R/intro.html#learning-outcomes",
+    "title": "Introduction to R",
+    "section": "Learning outcomes",
+    "text": "Learning outcomes\nBy the end of this unit, you’ll be able to:\n\nDo this\nDo that"
+  },
+  {
+    "objectID": "R/intro.html#requirements",
+    "href": "R/intro.html#requirements",
+    "title": "Introduction to R",
+    "section": "Requirements",
+    "text": "Requirements\n\n\n\n\n\n\nPreparing for the unit\n\n\n\nBefore we start the face to face session please you should:\n\nInstall R and RStudio (instructions can be found here: (Chapter installingr?))\nDownload exercise files (Data and code) from here\n\nInstructions for install R and RStudio on Mac can be found here."
+  },
+  {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "3  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever."
   },

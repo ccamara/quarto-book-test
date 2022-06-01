@@ -1,0 +1,29 @@
+# Introduction to R {#sec-rlang}
+
+This unit will provide a basic understanding of the R language and will cover data handling and visualisation.
+
+## Why R?
+
+R is a free and widely used statistical programming language. Employees of companies such as Google and Microsoft use R to process, analyse and visualise data. Work in R is supported by code written by leading academics in mathematics, statistics and many other areas. If you work in data analysis in your future career then knowing how to use R will be a very useful skill. 
+
+## Where is R used?
+
+## Learning outcomes
+
+By the end of this unit, you'll be able to:
+
+1. Do this
+2. Do that
+
+## Requirements
+
+::: callout-caution
+### Preparing for the unit
+Before we start the face to face session please you should:
+
+1. Install R and RStudio (instructions can be found here: [Chapter -@installingr])
+2. Download exercise files (Data and code) from here
+
+
+Instructions for install R and RStudio on Mac can be found here.
+:::
